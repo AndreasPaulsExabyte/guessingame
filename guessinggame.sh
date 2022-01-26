@@ -7,7 +7,6 @@ read number
 local listfiles=$(ls)
 local numberfiles=$(ls | wc -l)
 local dis=1
-echo "where is while?"
 while [[  $dis == 1  ]] || [[ $dis == 69 ]]
 do
 	if [[ $number == $numberfiles ]] && [[ $dis = 69 ]]
@@ -25,24 +24,20 @@ do
 	elif [[ $number > $numberfiles ]]
 	then
 		echo "$number is to high."
-		echo "$numberfiles"
 		read number
 	elif [[ $guess < $numberfiles ]]
 	then
 		echo "$number is to low."
-		echo "$numberfiles"
 		read number
 	else
 		echo "i dont know what you did to get here but ok."
-		echo "there are: "
-		echo "$listfiles"
+		echo "there are: $listfiles"
 		echo "number is: $numberfiles"
 		echo "now you can type in $numberfile to win"
 		let dis=69
 		read number
 	fi
 done
-
 }
 
 
