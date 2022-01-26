@@ -7,9 +7,8 @@ read number
 local listfiles=$(ls)
 local numberfiles=$(ls | wc -l)
 local dis=1
-
 echo "where is while?"
-while [[ ! dis == 0  ]]
+while [[  $dis == 1  ]] || [[ $dis == 69 ]]
 do
 	if [[ $number == $numberfiles ]] && [[ $dis = 69 ]]
 	then
@@ -32,7 +31,6 @@ do
 	then
 		echo "$number is to low."
 		echo "$numberfiles"
-		let dis=$number
 		read number
 	else
 		echo "i dont know what you did to get here but ok."

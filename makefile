@@ -1,7 +1,7 @@
 init:
-	touch README.md ;
-
-	echo -e "# guessinggame" > README.md ;
-	echo -e " \n \nDate make was run" >> README.md ;
-	date | echo >> README.md ;
-	echo -e " \nLines of Code:" $(nano guessinggame.md | wc -l) >> README.md ;
+	touch README.md
+	echo  "# guessinggame" > README.md
+	echo  " \n \nDate make was run:" >> README.md
+	date >> README.md
+	echo  " \nLines of Code:" >> README.md
+	wc -l guessinggame.sh  >> README.md
