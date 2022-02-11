@@ -21,13 +21,13 @@ do
 		echo "weee your guess is right"
 		let dis=0
 		exit
-	elif [[ $number > $numberfiles ]]
+	elif [[ $number -gt $numberfiles ]]
 	then
-		echo "$number is to high."
+		echo "$number is to high"
 		read number
-	elif [[ $guess < $numberfiles ]]
+	elif [[ $guess -lt $numberfiles ]]
 	then
-		echo "$number is to low."
+		echo "$number is to low"
 		read number
 	else
 		echo "it is $numberfile"
